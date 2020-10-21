@@ -1,13 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Calc-app
+{
+    background-color:#FF5733 ;
+    padding: 7%;
+    height: 100vh;
+
+}
+
+.Calc-body{
+    width: 350px;
+    /* height: 500px; */
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.Calc-screen{
+    padding: 10px;
+    padding-top: 70px;
+    text-align: right;
+    background-color: black;
+    color: white;
+    width: auto;
+    min-height: 100px;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.keybtn{
+    padding: 20px;
+    font-size:larger;    
+    font-weight: 750;
+    background-color: lightgray;
+}
+
+.keybtn:hover{
+    background-color: black;
+    color: white;
+    transition:all 0.2s linear;
+}
+
+.keybtn:active {
+    background-color: black;
+    box-shadow: 0 5px white;
+    transform: translateY(4px);
+  }
+
+.operatorbtn{
+    background-color: orange;
+    color: black;
+}
+
+.lastbtn{
+    border-radius: 0px 0px 10px 10px;
+}
+
+@media screen and (max-width:600px)
+{
+    .Calc-body{
+        width: 100%;
+    }
 }
